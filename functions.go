@@ -13,3 +13,10 @@ func split(sum int)(x,y int){
 func swap(x,y string)(string ,string){
 	return y,x
 }
+func sm(sum int) int{
+	for ; sum <1000;{
+		sum+=sum
+
+	}
+	return sum
+}

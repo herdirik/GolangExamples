@@ -11,7 +11,6 @@ func main(){
 	var portion float32
 	var name, surname string
 	const country ="TR"
-	
 	eposta=true
 	password=true
 	age=false
@@ -33,4 +32,11 @@ func main(){
 	fmt.Println(split(9))
 	a,b :=swap("hello","world")
 	fmt.Println(a,b)
+    s:=0
+	for i:=0 ;i<10;i++{
+		s+=i
+	}
+	fmt.Println(s)
+	fmt.Println(sm(1))
+
 }
