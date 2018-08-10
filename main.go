@@ -11,6 +11,7 @@ func main(){
 	var portion float32
 	var name, surname string
 	const country ="TR"
+	var poww= []int{1,2,4,8,16,32,64,128}
 	eposta=true
 	password=true
 	age=false
@@ -48,5 +49,12 @@ func main(){
 		pow(3, 2, 10),
 		pow(3, 3, 20),
 	)
+	
+	for i, v := range poww {
+			
+		fmt.Printf("2**%d = %d\n", i, v)
+	}
+	
+	
 
 }
