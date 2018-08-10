@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 )
 func main(){
 	
@@ -28,4 +29,8 @@ func main(){
 	fmt.Println(password || age)
 	fmt.Println(!eposta)
 	fmt.Println(country)
+	fmt.Println(add(3,5))
+	fmt.Println(split(9))
+	a,b :=swap("hello","world")
+	fmt.Println(a,b)
 }
