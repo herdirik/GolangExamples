@@ -38,5 +38,15 @@ func main(){
 	}
 	fmt.Println(s)
 	fmt.Println(sm(1))
+	//while deyimin karşılığı go da for dur.
+	number:=1
+	for number < 1000{
+		number+=number
+	}
+	fmt.Println(number)
+	fmt.Println(
+		pow(3, 2, 10),
+		pow(3, 3, 20),
+	)
 
 }

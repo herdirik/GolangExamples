@@ -1,4 +1,7 @@
 package main
+import(
+	"math"
+)
 
 func add(x int , y int) int{
     return x + y
@@ -19,4 +22,10 @@ func sm(sum int) int{
 
 	}
 	return sum
+}
+func pow(x, n, lim float64) float64{
+	if v := math.Pow(x, n); v < lim {
+		return v
+	}
+	return lim
 }
