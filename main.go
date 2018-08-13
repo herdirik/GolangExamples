@@ -62,13 +62,21 @@ func main(){
 	slice[2]="c"
 	fmt.Println("set:",slice)
 	fmt.Println("len:", len(slice))
-	//Kopyalama işlemi
+	//Copy (kopyalama) örneği.
 	kaynak:=[]int{1,2,3,4,5}
 	hedef:=make([]int, 2)
 	fmt.Println(hedef, kaynak)
 	sayi:=copy(hedef,kaynak)
 	fmt.Println("Kopyalanan eleman sayısı:" ,sayi)
 	fmt.Println(hedef, kaynak)
-
+	//Map(Harita) örneği.
+	var il_nufus map[string]int
+	il_nufus = make(map[string]int)
+	il_nufus["İstanbul"]=1500000
+	il_nufus["izmir"]=35.000
+	il_nufus["Manisa"]=20.000
+	fmt.Println(il_nufus["Manisa"])
+	fmt.Println(il_nufus)
+	
 
 }
