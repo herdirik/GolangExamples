@@ -33,6 +33,7 @@ func main(){
 	fmt.Println(split(9))
 	a,b :=swap("hello","world")
 	fmt.Println(a,b)
+	//for döngüsü.
     s:=0
 	for i:=0 ;i<10;i++{
 		s+=i
@@ -49,7 +50,6 @@ func main(){
 		pow(3, 2, 10),
 		pow(3, 3, 20),
 	)
-	
 	for i, v := range poww {
 			
 		fmt.Printf("2**%d = %d\n", i, v)
@@ -62,6 +62,13 @@ func main(){
 	slice[2]="c"
 	fmt.Println("set:",slice)
 	fmt.Println("len:", len(slice))
+	//Kopyalama işlemi
+	kaynak:=[]int{1,2,3,4,5}
+	hedef:=make([]int, 2)
+	fmt.Println(hedef, kaynak)
+	sayi:=copy(hedef,kaynak)
+	fmt.Println("Kopyalanan eleman sayısı:" ,sayi)
+	fmt.Println(hedef, kaynak)
 
 
 }
