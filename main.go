@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"encoding/json"
 
 )
 func main(){
@@ -77,6 +78,14 @@ func main(){
 	il_nufus["Manisa"]=20.000
 	fmt.Println(il_nufus["Manisa"])
 	fmt.Println(il_nufus)
-	
+
+	sozluk := make(map[string]string)
+	sozluk["IP"]="Internet Protocol"
+	sozluk["LAMP"]="Linux Apache MySQL PHP"
+	sozluk["GNU"] ="GNU is not Unix"
+	sozluk["WWW"] ="World Wide Web"
+	sozluk["IMAP"] ="Internet Message Access Protocol"
+	tumelemanlar,_:=json.MarshalIndent(sozluk,""," ")
+	fmt.Println(string(tumelemanlar))
 
 }
