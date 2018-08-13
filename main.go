@@ -54,7 +54,14 @@ func main(){
 			
 		fmt.Printf("2**%d = %d\n", i, v)
 	}
-	
-	
+	// slices example 
+	slice :=make([] string ,3)
+	fmt.Println("emp:",slice)
+	slice[0]="a"
+	slice[1]="b"
+	slice[2]="c"
+	fmt.Println("set:",slice)
+	fmt.Println("len:", len(slice))
+
 
 }
