@@ -30,3 +30,10 @@ func pow(x, n, lim float64) float64{
 	}
 	return lim
 }
+//Recursive fonksiyonlar.
+func faktoriyel(sayi int) int{
+	if sayi ==0{
+		return 1
+	}
+	return sayi * faktoriyel(sayi -1)
+}

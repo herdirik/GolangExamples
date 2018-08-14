@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"encoding/json"
 
+
 )
 func main(){
-	
 	var eposta , password , age bool
 	var number1, number2 ,sum int
 	var portion float32
@@ -72,7 +72,7 @@ func main(){
 	fmt.Println(hedef, kaynak)
 	//Map(Harita) örneği.
 	var il_nufus map[string]int
-	il_nufus = make(map[string]int)
+    il_nufus = make(map[string]int)
 	il_nufus["İstanbul"]=1500000
 	il_nufus["izmir"]=35.000
 	il_nufus["Manisa"]=20.000
@@ -87,5 +87,9 @@ func main(){
 	sozluk["IMAP"] ="Internet Message Access Protocol"
 	tumelemanlar,_:=json.MarshalIndent(sozluk,""," ")
 	fmt.Println(string(tumelemanlar))
+
+	fmt.Println(faktoriyel(5))
+
+
 
 }
