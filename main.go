@@ -87,8 +87,12 @@ func main(){
 	sozluk["IMAP"] ="Internet Message Access Protocol"
 	tumelemanlar,_:=json.MarshalIndent(sozluk,""," ")
 	fmt.Println(string(tumelemanlar))
-
-	fmt.Println(faktoriyel(5))
+	p := Point{3, 4}
+	m := MyInt(3)
+	
+	fmt.Printf("Point: %d\n", addMagicNumber(p))
+	fmt.Printf("MyInt: %d\n", addMagicNumber(m))
+	
 
 
 

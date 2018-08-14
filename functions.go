@@ -2,6 +2,24 @@ package main
 import(
 	"math"
 )
+type Point struct{
+	X int
+	Y int
+}
+type MyInt int
+
+type Adder interface {
+    Add(int) int
+}
+
+
+func (m MyInt) Add(a int) int {
+    return int(m) + a
+}
+
+func addMagicNumber(a Adder) int {
+    return a.Add(5)
+}
 
 func add(x int , y int) int{
     return x + y
@@ -36,4 +54,8 @@ func faktoriyel(sayi int) int{
 		return 1
 	}
 	return sayi * faktoriyel(sayi -1)
+}
+//struct yapısı.
+func (p Point) Add (a int) int{
+	return p.X + p.Y + a
 }
