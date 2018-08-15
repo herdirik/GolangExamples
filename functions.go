@@ -7,12 +7,10 @@ type Point struct{
 	Y int
 }
 type MyInt int
-
+//interface 
 type Adder interface {
     Add(int) int
 }
-
-
 func (m MyInt) Add(a int) int {
     return int(m) + a
 }
@@ -20,17 +18,14 @@ func (m MyInt) Add(a int) int {
 func addMagicNumber(a Adder) int {
     return a.Add(5)
 }
-
 func add(x int , y int) int{
     return x + y
 }
-
 func split(sum int)(x,y int){
 	x=sum * 4/9
 	y=sum -x
 	return 
 }
-
 func swap(x,y string)(string ,string){
 	return y,x
 }
