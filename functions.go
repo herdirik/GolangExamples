@@ -11,6 +11,7 @@ type MyInt int
 type Adder interface {
     Add(int) int
 }
+
 func (m MyInt) Add(a int) int {
     return int(m) + a
 }
