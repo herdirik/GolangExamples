@@ -123,9 +123,31 @@ func main(){
 		5,
 	}
 	measure(r)
-    measure(c)
+	measure(c)
+	
+	// error handling example 
+	for _,i :=range []int{7,42}{
+		if r ,e :=f1(i);e!=nil{
+			fmt.Println("f1 failed :", e)
+		}else {
+			fmt.Println("f1 worked :",r)
+		}
 
+	}
+	for _,i :=range []int{7,42}{
+		if r,e :=f2(i);e!=nil{
+			fmt.Println("f2 failed :", e)
+		} else {
+            fmt.Println("f2 workd :", r)
+		}
 
+	}
+	_,e :=f2(42)
+	if ae , ok := e.(*argError); ok{
+		fmt.Println(ae.arg)
+        fmt.Println(ae.prob)
+	}
+	
 
 
 
