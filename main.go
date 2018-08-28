@@ -113,7 +113,17 @@ func main(){
 	fmt.Println("Rectangle area is:", r1.Area_by_value())
 	fmt.Println("Rectangle area is:", r1.Area_by_reference())
 	fmt.Println("Rectangle area is:", (&r1).Area_by_value())
-    fmt.Println("Rectangle area is:", (&r1).Area_by_reference())
+	fmt.Println("Rectangle area is:", (&r1).Area_by_reference())
+	//interface example 
+	r := rect{
+		3, 
+		4,
+	}
+    c := circle{
+		5,
+	}
+	measure(r)
+    measure(c)
 
 
 
