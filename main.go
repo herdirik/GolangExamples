@@ -3,8 +3,6 @@ package main
 import (
 	"fmt"
 	"encoding/json"
-
-
 )
 func main(){
 	var eposta , password , age bool
@@ -105,6 +103,19 @@ func main(){
 
 	}
 	post1.details()
+
+	//pointer example 
+	r1:=rectangle{
+		4,
+		5,
+	}
+	fmt.Println("Rectangle is :",r1)
+	fmt.Println("Rectangle area is:", r1.Area_by_value())
+	fmt.Println("Rectangle area is:", r1.Area_by_reference())
+	fmt.Println("Rectangle area is:", (&r1).Area_by_value())
+    fmt.Println("Rectangle area is:", (&r1).Area_by_reference())
+
+
 
 
 
