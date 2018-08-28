@@ -147,7 +147,15 @@ func main(){
 		fmt.Println(ae.arg)
         fmt.Println(ae.prob)
 	}
+	//goroutine example 
+	f("direct")
+	go f("goroutine")
+	go func (mgs string){
+		fmt.Println(mgs)
+	}("going")
 	
+	fmt.Scanln()
+	fmt.Println("done")
 
 
 
