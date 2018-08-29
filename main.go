@@ -156,6 +156,12 @@ func main(){
 	
 	fmt.Scanln()
 	fmt.Println("done")
+	//channels example 
+	messages :=make(chan string)
+	go func(){messages <- "ping"}()
+	msg := <-messages
+	fmt.Println(msg)
+	
 
 
 
